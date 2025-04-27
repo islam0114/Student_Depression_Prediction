@@ -5,13 +5,7 @@ import pandas as pd
 import requests
 from io import BytesIO
 
-url = "https://github.com/islam0114/milestone_4 (deployment)/model.sav"
-response = requests.get(url)
-if response.status_code == 200:
-    # تحميل الموديل باستخدام pickle
-    Data = pickle.load(BytesIO(response.content))
-else:
-    print(f"فشل تحميل الملف، حالة الاستجابة: {response.status_code}")
+Data = pickle.load(open("milestone_4 (deployment)/model.sav", "rb"))
 
 st.title("Depression Prediction App")
 
