@@ -3,7 +3,7 @@ import pickle
 import streamlit as st
 import pandas as pd
 
-Data = pickle.load(open("milestone_4 (deployment)/model.sav", "rb"))
+Data = pickle.load(open("https://github.com/islam0114/Health-Care-Project/blob/c73914e094bfbd4a62086767dad6ef6ed2f2bc77/milestone_4%20(deployment)/model.sav", "rb"))
 
 st.title("Depression Prediction App")
 
