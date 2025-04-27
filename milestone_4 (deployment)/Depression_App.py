@@ -2,8 +2,16 @@ import numpy as np
 import pickle
 import streamlit as st
 import pandas as pd
+import requests
+from io import BytesIO
 
-Data = pickle.load(open("https://github.com/islam0114/Health-Care-Project/blob/c73914e094bfbd4a62086767dad6ef6ed2f2bc77/milestone_4%20(deployment)/model.sav", "rb"))
+url = "https://github.com/islam0114/Health-Care-Project/blob/c73914e094bfbd4a62086767dad6ef6ed2f2bc77/milestone_4%20(deployment)/model.sav"
+response = requests.get(url)
+if response.status_code == 200:
+    # تحميل الموديل باستخدام pickle
+    Data = pickle.load(BytesIO(response.content))
+else:
+    print(f"فشل تحميل الملف، حالة الاستجابة: {response.status_code}")
 
 st.title("Depression Prediction App")
 
