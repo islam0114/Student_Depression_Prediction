@@ -3,7 +3,8 @@ import streamlit as st
 import pandas as pd
 import pickle
 
-Data = pickle.load(open(r"https://drive.google.com/file/d/1mzJg9F7Cg3wElTeU13BkEjUE_Y8h6a85/view?usp=drive_link", "rb"))
+with open('model.sav', 'rb') as file:
+    Data = pickle.load(file)
 
 st.title("Depression Prediction App")
 
