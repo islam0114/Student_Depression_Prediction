@@ -1,13 +1,9 @@
 import numpy as np
 import streamlit as st
 import pandas as pd
-import os
 import pickle
 
-current_dir = os.path.dirname(os.path.abspath(__file__))
-model_path = os.path.join(current_dir, "model.sav")
-
-Data = pickle.load(open(model_path, "rb"))
+Data = pickle.load(open(r"https://drive.google.com/file/d/1mzJg9F7Cg3wElTeU13BkEjUE_Y8h6a85/view?usp=drive_link", "rb"))
 
 st.title("Depression Prediction App")
 
