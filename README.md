@@ -1,5 +1,3 @@
-NOTE >> OUR MASTER IS EMPTY because we work in branches then we will merge all our branches in MASTER
-
 OUR PROJECT :
 
 Overview: 
