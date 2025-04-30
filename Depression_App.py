@@ -3,7 +3,7 @@ import streamlit as st
 import pandas as pd
 import pickle
 
-Data = pickle.load(open('milestone_4 (deployment)/model.sav', 'rb'))
+Data = pickle.load(open('milestone_4 (deployment)/xgboost.sav', 'rb'))
 
 st.set_page_config(page_title="Student Depression", page_icon="🧠", layout="wide")
 st.title("Student Depression Prediction App")
