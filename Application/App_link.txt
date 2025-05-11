@@ -1,1 +1,1 @@
-https://student-depression-app.streamlit.app
+https://student-depression-app.streamlit.app/
