@@ -8,7 +8,6 @@ Mental health challenges among university students are becoming increasingly com
 This project leverages data science techniques to analyze and predict student depression by uncovering key risk factors and patterns. Through the use of machine learning, statistics, and data visualization, it supports educational institutions in designing better mental health strategies.
 
 2. 🎯 Objectives
-   
 2.1 Data Collection & Analysis
 Gather public or survey-based datasets related to student mental health
 Clean and preprocess the data to ensure consistency
