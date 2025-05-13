@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/arwah/OneDrive/Desktop/HealthCare%20Project/mlruns/253308037150806857/da99af691c1e4c0fbb11223dca3ece99/artifacts
+end_time: 1747091457683
+entry_point_name: ''
+experiment_id: '253308037150806857'
+lifecycle_stage: active
+run_id: da99af691c1e4c0fbb11223dca3ece99
+run_name: welcoming-wren-941
+run_uuid: da99af691c1e4c0fbb11223dca3ece99
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1747091435054
+status: 3
+tags: []
+user_id: arwah

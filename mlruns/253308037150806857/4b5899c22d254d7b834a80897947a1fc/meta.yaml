@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/arwah/OneDrive/Desktop/HealthCare%20Project/mlruns/253308037150806857/4b5899c22d254d7b834a80897947a1fc/artifacts
+end_time: 1747091564599
+entry_point_name: ''
+experiment_id: '253308037150806857'
+lifecycle_stage: active
+run_id: 4b5899c22d254d7b834a80897947a1fc
+run_name: vaunted-wren-300
+run_uuid: 4b5899c22d254d7b834a80897947a1fc
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1747091550580
+status: 3
+tags: []
+user_id: arwah

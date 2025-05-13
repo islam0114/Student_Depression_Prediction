@@ -1,0 +1,29 @@
+{
+  "inputs": {
+    "Gender": 1.0,
+    "Age": 18.0,
+    "City": 44.0,
+    "Academic Pressure": 2.0,
+    "CGPA": 8.17,
+    "Study Satisfaction": 4.0,
+    "Sleep Duration": 2.0,
+    "Dietary Habits": 0.0,
+    "Degree": 9.0,
+    "Have you ever had suicidal thoughts ?": 0.0,
+    "Work/Study Hours": 9.0,
+    "Financial Stress": 1.0,
+    "Family History of Mental Illness": 0.0,
+    "Social Isolation": 4.0,
+    "Bullying": 0.0,
+    "Family Issues": 1.0,
+    "Uncertain Future": 4.0,
+    "Social Media Usage": 1.0,
+    "Drug/Smoking": 0.0,
+    "Favorite Color": 4.0,
+    "Pet Ownership": 1.0,
+    "Daily Coffee Intake": 1.0,
+    "Music Genre Preference": 3.0,
+    "PHQ-9": 1.0,
+    "Cortisol_Level": 6.907751318996127
+  }
+}

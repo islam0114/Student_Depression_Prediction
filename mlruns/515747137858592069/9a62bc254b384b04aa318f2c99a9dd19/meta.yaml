@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/arwah/OneDrive/Desktop/HealthCare%20Project/mlruns/515747137858592069/9a62bc254b384b04aa318f2c99a9dd19/artifacts
+end_time: 1747088377767
+entry_point_name: ''
+experiment_id: '515747137858592069'
+lifecycle_stage: active
+run_id: 9a62bc254b384b04aa318f2c99a9dd19
+run_name: fortunate-bear-290
+run_uuid: 9a62bc254b384b04aa318f2c99a9dd19
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1747088375279
+status: 4
+tags: []
+user_id: arwah

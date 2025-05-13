@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/arwah/OneDrive/Desktop/HealthCare%20Project/mlruns/669741310345040317/6f5fda4eb48c41ecb480bb93078b5566/artifacts
+end_time: 1747089352662
+entry_point_name: ''
+experiment_id: '669741310345040317'
+lifecycle_stage: active
+run_id: 6f5fda4eb48c41ecb480bb93078b5566
+run_name: delicate-bug-546
+run_uuid: 6f5fda4eb48c41ecb480bb93078b5566
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1747089339699
+status: 3
+tags: []
+user_id: arwah

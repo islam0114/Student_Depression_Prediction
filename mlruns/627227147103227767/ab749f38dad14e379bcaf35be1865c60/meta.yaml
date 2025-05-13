@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/arwah/OneDrive/Desktop/HealthCare%20Project/mlruns/627227147103227767/ab749f38dad14e379bcaf35be1865c60/artifacts
+end_time: 1747084532660
+entry_point_name: ''
+experiment_id: '627227147103227767'
+lifecycle_stage: active
+run_id: ab749f38dad14e379bcaf35be1865c60
+run_name: efficient-bear-832
+run_uuid: ab749f38dad14e379bcaf35be1865c60
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1747084522030
+status: 3
+tags: []
+user_id: arwah

@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/arwah/OneDrive/Desktop/HealthCare%20Project/mlruns/608825469529564684/fd29b4ec4cde40548b94a325e1f7283e/artifacts
+end_time: 1747089662981
+entry_point_name: ''
+experiment_id: '608825469529564684'
+lifecycle_stage: active
+run_id: fd29b4ec4cde40548b94a325e1f7283e
+run_name: incongruous-owl-641
+run_uuid: fd29b4ec4cde40548b94a325e1f7283e
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1747089645661
+status: 3
+tags: []
+user_id: arwah

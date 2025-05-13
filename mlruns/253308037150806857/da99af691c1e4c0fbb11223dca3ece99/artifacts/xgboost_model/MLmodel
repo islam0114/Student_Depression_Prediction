@@ -1,0 +1,50 @@
+artifact_path: xgboost_model
+flavors:
+  python_function:
+    data: model.xgb
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.xgboost
+    python_version: 3.12.7
+  xgboost:
+    code: null
+    data: model.xgb
+    model_class: xgboost.sklearn.XGBClassifier
+    model_format: xgb
+    xgb_version: 3.0.0
+is_signature_from_type_hint: false
+mlflow_version: 2.22.0
+model_size_bytes: 302255
+model_uuid: 2050bcd0b7824005957534d6e8210115
+prompts: null
+run_id: da99af691c1e4c0fbb11223dca3ece99
+saved_input_example_info:
+  artifact_path: input_example.json
+  serving_input_path: serving_input_example.json
+  type: json_object
+signature:
+  inputs: '[{"type": "long", "name": "Gender", "required": true}, {"type": "double",
+    "name": "Age", "required": true}, {"type": "long", "name": "City", "required":
+    true}, {"type": "double", "name": "Academic Pressure", "required": true}, {"type":
+    "double", "name": "CGPA", "required": true}, {"type": "double", "name": "Study
+    Satisfaction", "required": true}, {"type": "long", "name": "Sleep Duration", "required":
+    true}, {"type": "long", "name": "Dietary Habits", "required": true}, {"type":
+    "long", "name": "Degree", "required": true}, {"type": "long", "name": "Have you
+    ever had suicidal thoughts ?", "required": true}, {"type": "double", "name": "Work/Study
+    Hours", "required": true}, {"type": "double", "name": "Financial Stress", "required":
+    true}, {"type": "long", "name": "Family History of Mental Illness", "required":
+    true}, {"type": "long", "name": "Social Isolation", "required": true}, {"type":
+    "long", "name": "Bullying", "required": true}, {"type": "long", "name": "Family
+    Issues", "required": true}, {"type": "long", "name": "Uncertain Future", "required":
+    true}, {"type": "long", "name": "Social Media Usage", "required": true}, {"type":
+    "long", "name": "Drug/Smoking", "required": true}, {"type": "long", "name": "Favorite
+    Color", "required": true}, {"type": "long", "name": "Pet Ownership", "required":
+    true}, {"type": "long", "name": "Daily Coffee Intake", "required": true}, {"type":
+    "long", "name": "Music Genre Preference", "required": true}, {"type": "long",
+    "name": "PHQ-9", "required": true}, {"type": "double", "name": "Cortisol_Level",
+    "required": true}]'
+  outputs: '[{"type": "tensor", "tensor-spec": {"dtype": "int32", "shape": [-1]}}]'
+  params: null
+type_hint_from_example: false
+utc_time_created: '2025-05-12 23:10:35.545902'

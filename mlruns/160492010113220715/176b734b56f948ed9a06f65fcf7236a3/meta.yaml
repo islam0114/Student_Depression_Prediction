@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/arwah/OneDrive/Desktop/HealthCare%20Project/mlruns/160492010113220715/176b734b56f948ed9a06f65fcf7236a3/artifacts
+end_time: 1747088744101
+entry_point_name: ''
+experiment_id: '160492010113220715'
+lifecycle_stage: active
+run_id: 176b734b56f948ed9a06f65fcf7236a3
+run_name: nosy-kite-71
+run_uuid: 176b734b56f948ed9a06f65fcf7236a3
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1747088713200
+status: 3
+tags: []
+user_id: arwah

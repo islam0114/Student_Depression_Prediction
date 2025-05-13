@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/arwah/OneDrive/Desktop/HealthCare%20Project/mlruns/869347884305205229/143085abcfe74639a0fd7a201d1dac3e/artifacts
+end_time: 1747087995971
+entry_point_name: ''
+experiment_id: '869347884305205229'
+lifecycle_stage: active
+run_id: 143085abcfe74639a0fd7a201d1dac3e
+run_name: nebulous-finch-131
+run_uuid: 143085abcfe74639a0fd7a201d1dac3e
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1747087960203
+status: 3
+tags: []
+user_id: arwah

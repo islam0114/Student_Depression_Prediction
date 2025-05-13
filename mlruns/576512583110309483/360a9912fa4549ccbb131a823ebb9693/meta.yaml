@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/arwah/OneDrive/Desktop/HealthCare%20Project/mlruns/576512583110309483/360a9912fa4549ccbb131a823ebb9693/artifacts
+end_time: 1747092155946
+entry_point_name: ''
+experiment_id: '576512583110309483'
+lifecycle_stage: active
+run_id: 360a9912fa4549ccbb131a823ebb9693
+run_name: spiffy-turtle-401
+run_uuid: 360a9912fa4549ccbb131a823ebb9693
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1747092129642
+status: 3
+tags: []
+user_id: arwah

@@ -1,0 +1,16 @@
+artifact_uri: file:///C:/Users/arwah/OneDrive/Desktop/HealthCare%20Project/mlruns/385326621411608329/27ba89a6b8b94db48bac6fc6986d16e7/artifacts
+deleted_time: 1747092561927
+end_time: 1747092423998
+entry_point_name: ''
+experiment_id: '385326621411608329'
+lifecycle_stage: deleted
+run_id: 27ba89a6b8b94db48bac6fc6986d16e7
+run_name: learned-horse-82
+run_uuid: 27ba89a6b8b94db48bac6fc6986d16e7
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1747092394679
+status: 3
+tags: []
+user_id: arwah

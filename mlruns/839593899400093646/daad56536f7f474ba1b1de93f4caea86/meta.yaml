@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/arwah/OneDrive/Desktop/HealthCare%20Project/mlruns/839593899400093646/daad56536f7f474ba1b1de93f4caea86/artifacts
+end_time: 1747090305056
+entry_point_name: ''
+experiment_id: '839593899400093646'
+lifecycle_stage: active
+run_id: daad56536f7f474ba1b1de93f4caea86
+run_name: capricious-seal-364
+run_uuid: daad56536f7f474ba1b1de93f4caea86
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1747090281593
+status: 3
+tags: []
+user_id: arwah

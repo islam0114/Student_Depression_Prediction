@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/arwah/OneDrive/Desktop/HealthCare%20Project/mlruns/169804888242630755/171571ed0da74edb88185aa07a971f81/artifacts
+end_time: 1747091146245
+entry_point_name: ''
+experiment_id: '169804888242630755'
+lifecycle_stage: active
+run_id: 171571ed0da74edb88185aa07a971f81
+run_name: useful-stag-750
+run_uuid: 171571ed0da74edb88185aa07a971f81
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1747091118655
+status: 3
+tags: []
+user_id: arwah
