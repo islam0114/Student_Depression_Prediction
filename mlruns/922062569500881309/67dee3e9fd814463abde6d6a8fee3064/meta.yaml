@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/arwah/OneDrive/Desktop/HealthCare%20Project/mlruns/922062569500881309/67dee3e9fd814463abde6d6a8fee3064/artifacts
+end_time: 1747175280285
+entry_point_name: ''
+experiment_id: '922062569500881309'
+lifecycle_stage: active
+run_id: 67dee3e9fd814463abde6d6a8fee3064
+run_name: fearless-deer-343
+run_uuid: 67dee3e9fd814463abde6d6a8fee3064
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1747175267011
+status: 3
+tags: []
+user_id: arwah

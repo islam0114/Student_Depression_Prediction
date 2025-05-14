@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/arwah/OneDrive/Desktop/HealthCare%20Project/mlruns/775288951181269807/592ac886625749408c1725581184c1b0/artifacts
+end_time: 1747174976340
+entry_point_name: ''
+experiment_id: '775288951181269807'
+lifecycle_stage: active
+run_id: 592ac886625749408c1725581184c1b0
+run_name: capable-grouse-363
+run_uuid: 592ac886625749408c1725581184c1b0
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1747174966671
+status: 3
+tags: []
+user_id: arwah

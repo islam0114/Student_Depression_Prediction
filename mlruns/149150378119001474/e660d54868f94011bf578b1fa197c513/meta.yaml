@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/arwah/OneDrive/Desktop/HealthCare%20Project/mlruns/149150378119001474/e660d54868f94011bf578b1fa197c513/artifacts
+end_time: 1747174503934
+entry_point_name: ''
+experiment_id: '149150378119001474'
+lifecycle_stage: active
+run_id: e660d54868f94011bf578b1fa197c513
+run_name: rogue-ape-712
+run_uuid: e660d54868f94011bf578b1fa197c513
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1747174494655
+status: 3
+tags: []
+user_id: arwah

@@ -1,0 +1,7 @@
+artifact_location: file:///C:/Users/arwah/OneDrive/Desktop/HealthCare%20Project/mlruns/839593899400093646
+creation_time: 1747090279072
+experiment_id: '839593899400093646'
+last_update_time: 1747173426499
+lifecycle_stage: deleted
+name: xgboost_exp_smote_updated
+tags: {}

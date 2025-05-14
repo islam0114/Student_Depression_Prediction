@@ -1,0 +1,16 @@
+artifact_uri: file:///C:/Users/arwah/OneDrive/Desktop/HealthCare%20Project/mlruns/419178679190749654/1ccb0c65a4954e3590928da6aa375c68/artifacts
+deleted_time: 1747173819322
+end_time: 1747173136832
+entry_point_name: ''
+experiment_id: '419178679190749654'
+lifecycle_stage: deleted
+run_id: 1ccb0c65a4954e3590928da6aa375c68
+run_name: amazing-moth-440
+run_uuid: 1ccb0c65a4954e3590928da6aa375c68
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1747173114536
+status: 3
+tags: []
+user_id: arwah

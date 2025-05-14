@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/arwah/OneDrive/Desktop/HealthCare%20Project/mlruns/149150378119001474/ef9d45904d334dc3876a267525e13a15/artifacts
+end_time: 1747179809842
+entry_point_name: ''
+experiment_id: '149150378119001474'
+lifecycle_stage: active
+run_id: ef9d45904d334dc3876a267525e13a15
+run_name: smiling-quail-760
+run_uuid: ef9d45904d334dc3876a267525e13a15
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1747179794976
+status: 3
+tags: []
+user_id: arwah

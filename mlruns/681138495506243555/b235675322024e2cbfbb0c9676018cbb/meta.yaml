@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/arwah/OneDrive/Desktop/HealthCare%20Project/mlruns/681138495506243555/b235675322024e2cbfbb0c9676018cbb/artifacts
+end_time: 1747173604476
+entry_point_name: ''
+experiment_id: '681138495506243555'
+lifecycle_stage: active
+run_id: b235675322024e2cbfbb0c9676018cbb
+run_name: gaudy-bug-413
+run_uuid: b235675322024e2cbfbb0c9676018cbb
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1747173603918
+status: 3
+tags: []
+user_id: arwah

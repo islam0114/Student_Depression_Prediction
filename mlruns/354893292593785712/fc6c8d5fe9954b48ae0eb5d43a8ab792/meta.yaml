@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/arwah/OneDrive/Desktop/HealthCare%20Project/mlruns/354893292593785712/fc6c8d5fe9954b48ae0eb5d43a8ab792/artifacts
+end_time: 1747179978138
+entry_point_name: ''
+experiment_id: '354893292593785712'
+lifecycle_stage: active
+run_id: fc6c8d5fe9954b48ae0eb5d43a8ab792
+run_name: casual-foal-412
+run_uuid: fc6c8d5fe9954b48ae0eb5d43a8ab792
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1747179971604
+status: 3
+tags: []
+user_id: arwah

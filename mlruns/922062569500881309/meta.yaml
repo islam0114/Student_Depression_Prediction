@@ -1,0 +1,6 @@
+artifact_location: file:///C:/Users/arwah/OneDrive/Desktop/HealthCare%20Project/mlruns/922062569500881309
+creation_time: 1747175266704
+experiment_id: '922062569500881309'
+last_update_time: 1747175266704
+lifecycle_stage: active
+name: lightgbm_smote

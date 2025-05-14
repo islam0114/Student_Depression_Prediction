@@ -1,58 +1,90 @@
 import mlflow
 import mlflow.sklearn
 import pandas as pd
+import os
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.model_selection import train_test_split
-from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score
-from imblearn.over_sampling import SMOTE
-import os
+from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score, confusion_matrix
+from imblearn.combine import SMOTEENN
+import matplotlib.pyplot as plt
+import seaborn as sns
+from mlflow.models.signature import infer_signature
 
-# 1. تحميل البيانات
+
 data_path = r"C:\Users\arwah\OneDrive\Desktop\HealthCare Project\datasets\cleaned_data.csv"
 if not os.path.exists(data_path):
     raise FileNotFoundError(f"File not found at: {data_path}")
-data = pd.read_csv(data_path)
-print("Columns in dataset:", data.columns)
+df = pd.read_csv(data_path)
 
-# 2. تحديد الـ features والـ target
-X = data.drop(columns=["Depression"])
-y = data["Depression"]
-X = X.fillna(0)
 
-# 3. تقسيم البيانات
-X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
+X = df.drop(['Depression'], axis=1).fillna(0)
+y = df['Depression']
 
-# 4. تطبيق SMOTE على بيانات التدريب
-smote = SMOTE(random_state=42)
-X_train_smote, y_train_smote = smote.fit_resample(X_train, y_train)
 
-# 5. تحديد التجربة
-mlflow.set_experiment("random_forest_exp_smote")
+smote_enn = SMOTEENN(random_state=42, n_jobs=-1)
+X_smote, y_smote = smote_enn.fit_resample(X, y)
 
-# 6. بدء الـ Run
+
+X_train, X_test, y_train, y_test = train_test_split(X_smote, y_smote, test_size=0.3, random_state=1)
+
+
+mlflow.set_experiment("random_forest_balanced")
+
 with mlflow.start_run():
-    model = RandomForestClassifier(n_estimators=100, max_depth=10, random_state=42)
-    model.fit(X_train_smote, y_train_smote)
 
+    model = RandomForestClassifier(n_estimators=100, max_depth=8, random_state=42)
+    model.fit(X_train, y_train)
+
+    
     y_pred = model.predict(X_test)
-    accuracy = accuracy_score(y_test, y_pred)
+    train_acc = accuracy_score(y_train, model.predict(X_train))
+    test_acc = accuracy_score(y_test, y_pred)
+
+   
+    mlflow.log_metric("train_accuracy", train_acc)
+    mlflow.log_metric("test_accuracy", test_acc)
+
     precision = precision_score(y_test, y_pred)
     recall = recall_score(y_test, y_pred)
     f1 = f1_score(y_test, y_pred)
-
-    mlflow.log_metric("accuracy", accuracy)
     mlflow.log_metric("precision", precision)
     mlflow.log_metric("recall", recall)
     mlflow.log_metric("f1_score", f1)
 
-    mlflow.log_param("model_type", "Random Forest")
-    mlflow.log_param("n_estimators", 100)
-    mlflow.log_param("max_depth", 10)
-    mlflow.log_param("random_state", 42)
+    
+    cm = confusion_matrix(y_test, y_pred)
+    plt.figure(figsize=(6, 4))
+    sns.heatmap(cm, annot=True, fmt='d', cmap='Greens', xticklabels=[0, 1], yticklabels=[0, 1])
+    plt.xlabel('Predicted')
+    plt.ylabel('Actual')
+    plt.title('Confusion Matrix')
+    plt.tight_layout()
+    plt.savefig("rf_confusion_matrix.png")
+    plt.close()
+    mlflow.log_artifact("rf_confusion_matrix.png")
 
-    signature = mlflow.models.signature.infer_signature(X_train, y_pred)
-    input_example = X_train.iloc[0].to_dict()
+    
+    signature = infer_signature(X_test, y_pred)
+    input_example = X_test.iloc[0].to_dict()
     mlflow.sklearn.log_model(model, "random_forest_model", signature=signature, input_example=input_example)
 
-    mlflow.set_tag("description", "Random Forest with SMOTE for Depression prediction")
-    print(f"Logged model with ID: {mlflow.active_run().info.run_id}")
+    
+    mlflow.log_param("model_type", "RandomForest")
+    mlflow.log_param("n_estimators", 100)
+    mlflow.log_param("max_depth", 8)
+    mlflow.set_tag("description", "Random Forest with SMOTEENN and full metrics on MLflow")
+
+    print(f"Train Accuracy: {train_acc}")
+    print(f"Test Accuracy: {test_acc}")
+    print("Confusion Matrix:\n", cm)
+
+    signature = infer_signature(X_train, model.predict(X_train))
+    input_example = X_train.iloc[0:1]
+
+    # تسجيل موديل Random Forest
+    mlflow.sklearn.log_model(
+        model,
+        artifact_path="rf_model",
+        signature=signature,
+        input_example=input_example
+    )

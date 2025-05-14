@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/arwah/OneDrive/Desktop/HealthCare%20Project/mlruns/922062569500881309/c55f8d692aef46f4a3c6f417b8432028/artifacts
+end_time: 1747181683215
+entry_point_name: ''
+experiment_id: '922062569500881309'
+lifecycle_stage: active
+run_id: c55f8d692aef46f4a3c6f417b8432028
+run_name: nebulous-mole-963
+run_uuid: c55f8d692aef46f4a3c6f417b8432028
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1747181667383
+status: 3
+tags: []
+user_id: arwah
