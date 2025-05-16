@@ -74,61 +74,89 @@ The final XGBoost model was saved and prepared for deployment.
 
 ----
 
+## 6. Model Deployment
+Input Features:
 
-2.1 Data Collection & Analysis
-Gather public or survey-based datasets related to student mental health
-Clean and preprocess the data to ensure consistency
-Explore the dataset through Exploratory Data Analysis (EDA)
+- Academic Pressure (0–5)
 
-2.2 Identifying Risk Factors
-Analyze connections between academic, social, and personal variables
-Use statistical analysis and feature selection to highlight significant predictors
+- Study Satisfaction (0–5)
 
-2.3 Machine Learning for Prediction
-Build predictive models to classify students into:
-1)Depressed 
-2)not Depressed
+- Dietary Habits (Healthy/Unhealthy)
 
-Compare the performance of models like:
-Logistic Regression
-Decision Trees
-Random Forest
-lightGBM
-XGB
-Neural Networks
-SVM
-GradientBoosting
-KNN
+- Suicidal Thoughts (Yes/No)
 
-2.4 Data Visualization & Reporting
-Use tools like Matplotlib, Seaborn,and Power BI
-Create interactive dashboards and clear visual summaries
-Provide practical recommendations based on data insights
+- Study Hours per Day (0–12)
 
-3.  Scope
- Included
-Public dataset collection and preparation
-Exploratory data analysis (EDA)
-Machine learning model development
-Visual presentation of findings
+- Financial Stress (0–5)
 
- Excluded
-Real-time diagnosis or clinical recommendations
-Clinical assessment data (unless publicly available)
-Psychological counseling or direct mental health services
+- Bullying (Yes/No)
 
-4.  Technologies Used
-Category	Tools / Libraries
-Programming Language	Python
-Data Analysis	pandas, NumPy
-Machine Learning	scikit-learn, 
-Visualization	Matplotlib, Seaborn,Power BI
+- PHQ-9 Score (0–20)
 
-5.  Expected Outcomes
-Identification of key factors linked to student depression
-Clear classification of students into risk levels
-Dashboards and visuals to help universities make informed decisions
-Data-backed recommendations to support mental health programs
+- Cortisol Level (0–10)
 
-6. Outcome
-This project provides a data-driven understanding of depression among students. The insights gained can assist academic institutions in identifying at-risk individuals and designing preventive mental health programs. While it is not a substitute for medical advice, the analysis offers a valuable foundation for further research and intervention planning.
+----
+
+## 7. Challenges Faced
+- Data Collection: Time-consuming and required extensive search
+
+- Missing Values: Minimal, handled by row deletion
+
+- Outliers: Retained PHQ-9 outliers (<5%) for data distribution integrity
+
+- Imbalanced Target: Required metrics like F1-score and ROC-AUC
+
+- Feature Selection for Plots: Needed to avoid noisy or uninformative visuals
+
+- High Dimensionality: Increased model complexity and training time
+
+- Scaling Issues: Addressed normalization for better visualization and modeling
+
+- Text Data: Required appropriate encoding without losing semantics
+
+- Overfitting Risk: Mitigated with model tuning and feature control
+
+-----
+
+## 8. Key Insights
+- Critical Risk Factors Identified: e.g., age, PHQ-9 score, mental health history
+
+- Explainable Models: Feature importance helped interpret predictions
+
+- Proactive Decision Support: Early identification enables better mental health planning
+
+- Deployment-Ready Architecture: Model is scalable and API/web compatible
+
+- Balanced Evaluation Metrics: Focused on precision, recall, F1-score, ROC-AUC
+
+- Insightful Visualizations: Helped uncover patterns and trends in student behavior
+
+----
+
+## 9. Integration Recommendations
+- EHR Integration: Embed risk predictions into student health systems
+
+- Clinical Decision Support: Show risk scores + suggested actions
+
+- Workflow Automation: Trigger alerts or follow-up scheduling for high-risk students
+
+- Feedback Loop: Enable updates and corrections to the model
+
+- Staff Training: Educate staff on model use and interpretation
+
+- Compliance: Ensure fairness, bias audits, and transparency in usage
+
+- Collaborative Use: Promote use in multidisciplinary health or counseling teams
+
+----
+
+## 10. Tools & Technologies
+
+| Category         | Tools                         |
+| ---------------- | ----------------------------- |
+| Language         | Python                        |
+| Data Processing  | pandas, NumPy                 |
+| Machine Learning | scikit-learn, XGBoost         |
+| Visualization    | Matplotlib, Seaborn, Power BI |
+
+
