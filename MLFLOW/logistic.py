@@ -7,29 +7,29 @@ from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_sc
 from imblearn.over_sampling import SMOTE
 import os
 
-# 1. تحميل البيانات
+
 data_path = r"C:\Users\arwah\OneDrive\Desktop\HealthCare Project\datasets\cleaned_data.csv"
 if not os.path.exists(data_path):
     raise FileNotFoundError(f"File not found at: {data_path}")
 data = pd.read_csv(data_path)
 print("Columns in dataset:", data.columns)
 
-# 2. تحديد الـ features والـ target
+
 X = data.drop(columns=["Depression"])
 y = data["Depression"]
 X = X.fillna(0)
 
-# 3. تقسيم البيانات
+
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
 
-# 4. تطبيق SMOTE على بيانات التدريب
+
 smote = SMOTE(random_state=42)
 X_train_smote, y_train_smote = smote.fit_resample(X_train, y_train)
 
-# 5. تحديد التجربة
+
 mlflow.set_experiment("logisticcc_smote")
 
-# 6. بدء الـ Run
+
 with mlflow.start_run():
     model = LogisticRegression(max_iter=1000)
     model.fit(X_train_smote, y_train_smote)

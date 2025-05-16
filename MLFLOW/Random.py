@@ -81,7 +81,7 @@ with mlflow.start_run():
     signature = infer_signature(X_train, model.predict(X_train))
     input_example = X_train.iloc[0:1]
 
-    # تسجيل موديل Random Forest
+  
     mlflow.sklearn.log_model(
         model,
         artifact_path="rf_model",
