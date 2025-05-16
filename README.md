@@ -1,13 +1,51 @@
 # Student Depression Analysis Using Data Science
-1.  Overview
-Mental health challenges among university students are becoming increasingly common, with depression standing out as one of the most widespread and impactful disorders. It can negatively affect:
-1)Academic performance
-2)Social relationships
-3)General well-being
+This project aims to develop a predictive model to identify university students at risk of depression using psychological, academic, and lifestyle factors. The goal is to provide educational institutions with data-driven insights to support mental health strategies and early intervention efforts.
 
-This project leverages data science techniques to analyze and predict student depression by uncovering key risk factors and patterns. Through the use of machine learning, statistics, and data visualization, it supports educational institutions in designing better mental health strategies.
+----
 
-2.  Objectives
+## 1. Project Overview
+University students face increasing mental health challenges, with depression being one of the most widespread disorders. This project leverages data science techniques to:
+
+- Identify critical risk factors for student depression
+
+- Build machine learning models to classify students by risk level
+
+- Offer actionable insights for improving campus mental health services
+
+----
+
+## 2. Team Members
+- Arwa Hamdy Mohammdy
+
+- Eslam Mohammed Abdelfattah
+
+- Mariam Mostafa Abdelaziz
+
+- Mariam Mostafa Abdelaal
+
+----
+
+## 3. Dataset Description
+Source: Kaggle (after over a month of exploration)
+
+The dataset includes a wide variety of features categorized into:
+
+1. Personal Information
+ID, gender, age, city, pet ownership, favorite color
+
+2. Academic Factors
+Academic pressure, CGPA, degree, study satisfaction, study/work hours
+
+3. Psychological Factors
+Suicidal thoughts, depression status, PHQ-9 score, cortisol level
+
+4. Social & Emotional Factors
+Financial stress, family history of mental illness, social isolation, bullying, family issues, uncertain future, social media usage
+
+5. Lifestyle & Health Habits
+Sleep duration, dietary habits, drug/smoking, daily coffee intake, music genre preference
+
+
 2.1 Data Collection & Analysis
 Gather public or survey-based datasets related to student mental health
 Clean and preprocess the data to ensure consistency
