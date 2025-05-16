@@ -1,5 +1,5 @@
-🧠 Student Depression Analysis Using Data Science
-1. 📌 Overview
+ Student Depression Analysis Using Data Science
+1.  Overview
 Mental health challenges among university students are becoming increasingly common, with depression standing out as one of the most widespread and impactful disorders. It can negatively affect:
 1)Academic performance
 2)Social relationships
@@ -7,7 +7,7 @@ Mental health challenges among university students are becoming increasingly com
 
 This project leverages data science techniques to analyze and predict student depression by uncovering key risk factors and patterns. Through the use of machine learning, statistics, and data visualization, it supports educational institutions in designing better mental health strategies.
 
-2. 🎯 Objectives
+2.  Objectives
 2.1 Data Collection & Analysis
 Gather public or survey-based datasets related to student mental health
 Clean and preprocess the data to ensure consistency
@@ -38,26 +38,26 @@ Use tools like Matplotlib, Seaborn,and Power BI
 Create interactive dashboards and clear visual summaries
 Provide practical recommendations based on data insights
 
-3. 🔍 Scope
-✅ Included
+3.  Scope
+ Included
 Public dataset collection and preparation
 Exploratory data analysis (EDA)
 Machine learning model development
 Visual presentation of findings
 
-❌ Excluded
+ Excluded
 Real-time diagnosis or clinical recommendations
 Clinical assessment data (unless publicly available)
 Psychological counseling or direct mental health services
 
-4. 🛠️ Technologies Used
+4.  Technologies Used
 Category	Tools / Libraries
 Programming Language	Python
 Data Analysis	pandas, NumPy
 Machine Learning	scikit-learn, 
 Visualization	Matplotlib, Seaborn,Power BI
 
-5. 📈 Expected Outcomes
+5.  Expected Outcomes
 Identification of key factors linked to student depression
 Clear classification of students into risk levels
 Dashboards and visuals to help universities make informed decisions
