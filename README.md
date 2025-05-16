@@ -159,4 +159,54 @@ Input Features:
 | Machine Learning | scikit-learn, XGBoost         |
 | Visualization    | Matplotlib, Seaborn, Power BI |
 
+----
+
+## 11. Project Structure
+Health-Care-Project/
+
+│
+
+├── APP/                           # App-related files (possibly UI or interface)
+
+│
+
+├── CODE/                          # Final scripts and source code
+
+│
+
+├── DATASETS/                      # Processed datasets
+
+│
+
+├── DEPLOYMENT/                    # Deployment logic or configuration
+
+│
+
+├── Dashboard/                     # Power BI dashboards and reports
+
+│
+
+├── MLFLOW/                        # MLflow-related tracking folders
+
+│
+
+├── PRESENTATION/                 # Presentation slides
+
+│
+
+├── REPORTS/                       # Final reports and documentation
+
+│
+
+├── catboost_info/                # Logs or model info from CatBoost (auto-generated)
+
+│
+
+├── mlruns/                        # MLflow tracking directory (auto-generated)
+
+│
+
+├── README.md                      # Project documentation and overview
+
+├── requirements.txt               # List of required Python packages
 
