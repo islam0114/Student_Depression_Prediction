@@ -30,20 +30,49 @@ Source: Kaggle (after over a month of exploration)
 
 The dataset includes a wide variety of features categorized into:
 
-1. Personal Information
+- Personal Information:
 ID, gender, age, city, pet ownership, favorite color
 
-2. Academic Factors
+- Academic Factors:
 Academic pressure, CGPA, degree, study satisfaction, study/work hours
 
-3. Psychological Factors
+- Psychological Factors:
 Suicidal thoughts, depression status, PHQ-9 score, cortisol level
 
-4. Social & Emotional Factors
+- Social & Emotional Factors:
 Financial stress, family history of mental illness, social isolation, bullying, family issues, uncertain future, social media usage
 
-5. Lifestyle & Health Habits
+- Lifestyle & Health Habits:
 Sleep duration, dietary habits, drug/smoking, daily coffee intake, music genre preference
+
+----
+
+## 4. Data Preprocessing
+
+- Missing Values: Only 3 missing values (in Financial Stress) were dropped
+
+- Categorical Encoding: Applied Label Encoding to convert categorical features
+
+- Feature Scaling: Used for models sensitive to feature scale (e.g., SVM, Logistic Regression)
+
+- Train-Test Split: 70% training / 30% testing
+
+----
+
+## 5. Model Development
+Multiple machine learning models were tested. XGBoost was selected as the final model due to its:
+
+- High accuracy
+
+- Robust performance on imbalanced data
+
+- Capability to capture both linear and non-linear patterns
+
+- Built-in support for feature importance analysis
+
+The final XGBoost model was saved and prepared for deployment.
+
+----
 
 
 2.1 Data Collection & Analysis
