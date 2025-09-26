@@ -150,7 +150,12 @@ Input Features:
 
 ----
 
-## 10. Tools & Technologies
+## 10. Deployment
+App: https://student-depression-app.streamlit.app/
+
+----
+
+## 11. Tools & Technologies
 
 | Category         | Tools                         |
 | ---------------- | ----------------------------- |
@@ -161,7 +166,7 @@ Input Features:
 
 ----
 
-## 11. Project Structure
+## 12. Project Structure
 Health-Care-Project/
 
 │
